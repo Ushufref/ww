@@ -6,18 +6,20 @@ theme: /
         q!: $regex</start>
         a: Начнём.
 
-    state: Hello
-        intent!: /привет
-        a: Привет привет
+    state: /hello
+        q!: [* *ривет* */* *дравствуй* */* *обр* * (~день/~вечер/~утро)]
+        a: sap
+        
+    state: /weather
+        q!: [* *огод* */*рогноз* * погоды/* *рогноз* */ * *градус* *]
+        a: nice
+    
+    state: /currency
+        q!: [* *урс * валют */* *алюты *]
+        a: 1 EUR = 73.28 RUB
 
-    state: Bye
-        intent!: /пока
-        a: Пока пока
 
-    state: NoMatch
+    state: /NoMatch
         event!: noMatch
         a: Я не понял. Вы сказали: {{$request.query}}
 
-    state: Match
-        event!: match
-        a: {{$context.intent.answer}}
