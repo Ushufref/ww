@@ -11,7 +11,7 @@ theme: /
         a: sap
         
     state: /weather
-        q!: [* *огод* */* *рогноз* */ * *радус* */* *олн* *]
+        q!: * *о* *
         a: nice
     
     state: /currency
