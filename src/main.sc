@@ -15,7 +15,7 @@ theme: /
         a: nice
     
     state: /currency
-        q!: [* *а* */ * *у* *]
+        q!: [* *а* */ * *у* */ * *в* *]
         a: 1 EUR = 73.28 RUB
 
 
