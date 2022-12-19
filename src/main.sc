@@ -14,9 +14,7 @@ theme: /
         q!: [* *огод* */* *рогноз* */ * *радус* *]
         a: nice
     
-    state: /currency
-        q!: [* *урс * валют* */* *алюты */ * *убл* *]
-        a: 1 EUR = 73.28 RUB
+    
 
 
     state: /NoMatch
